@@ -20,7 +20,7 @@ from river import stats
 
 
 app = Flask(__name__)
-model = pickle.load(open('model.pkl', 'rb'))
+model = pickle.load(open('PA_model.pkl', 'rb'))
 
 def text_processing(dataset, Y=None):
   def count_punct(text):
